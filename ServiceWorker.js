@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-window-0.1.0";
 const contentToCache = [
-    "Build/web_test2.loader.js",
-    "Build/web_test2.framework.js",
-    "Build/web_test2.data",
-    "Build/web_test2.wasm",
+    "Build/web_output.loader.js",
+    "Build/web_output.framework.js",
+    "Build/web_output.data",
+    "Build/web_output.wasm",
     "TemplateData/style.css"
 
 ];
