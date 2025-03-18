@@ -53,34 +53,10 @@
 <body>
 
     <div class="container">
-        <img id="image" src="TemplateData/ending_screen.png" alt="�Ϥ�">
-        <div class="buttons">
-            <button id="jumpBtn">再玩一次</button>
-            <button id="downloadAndJumpBtn">下載圖片</button>
-        </div>
+        <img id="image" src="TemplateData/ending_screen.png" alt="下載">
     </div>
 
-    <script>
-        document.getElementById("jumpBtn").addEventListener("click", function () {
-            window.location.href = "index.html"; 
-        });
 
-
-        document.getElementById("downloadBtn").addEventListener("click", function() {
-            let imageUrl = document.getElementById("image").src;  
-            let downloadLink = document.createElement("a");
-            downloadLink.href = imageUrl;
-            downloadLink.download = "downloaded_image.jpg"; 
-            document.body.appendChild(downloadLink);
-            downloadLink.click();
-            document.body.removeChild(downloadLink);
-
-
-            setTimeout(() => {
-                window.location.href = "index.html"; 
-            }, 500); 
-        });
-    </script>
 
 </body>
 </html>
