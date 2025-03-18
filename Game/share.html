@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ÂIÀ»¤U¸ü¹Ï¤ù¨Ã¸õÂà</title>
+    <title>å•¾å‘½é—œé ­</title>
     <style>
         body {
             display: flex;
@@ -20,7 +20,7 @@
         }
 
         img {
-            width: 675px; /* ¥i½Õ¾ã¤j¤p */
+            width: 675px; 
             border-radius: 10px;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
         }
@@ -32,7 +32,7 @@
             transform: translate(-50%, -50%);
             display: flex;
 //            flex-direction: column;
-            gap: 30px; /* «ö¶s¶¡¶Z */
+            gap: 30px; 
         }
 
         button {
@@ -53,32 +53,32 @@
 <body>
 
     <div class="container">
-        <img id="image" src="TemplateData/ending_screen.png" alt="¹Ï¤ù">
+        <img id="image" src="TemplateData/ending_screen.png" alt="ï¿½Ï¤ï¿½">
         <div class="buttons">
-            <button id="jumpBtn">¦Aª±¤@¦¸</button>
-            <button id="downloadAndJumpBtn">¤À¨Éµ¡±şª¾ÃÑ</button>
+            <button id="jumpBtn">å†ç©ä¸€æ¬¡</button>
+            <button id="downloadAndJumpBtn">ä¸‹è¼‰åœ–ç‰‡</button>
         </div>
     </div>
 
     <script>
         document.getElementById("jumpBtn").addEventListener("click", function () {
-            window.location.href = "index.htm"; //¦^¹CÀ¸µe­±
+            window.location.href = "index.html"; 
         });
 
 
         document.getElementById("downloadBtn").addEventListener("click", function() {
-            let imageUrl = document.getElementById("image").src;  // ¨ú±o¹Ï¤ùºô§}
+            let imageUrl = document.getElementById("image").src;  
             let downloadLink = document.createElement("a");
             downloadLink.href = imageUrl;
-            downloadLink.download = "downloaded_image.jpg"; // ³]©w¤U¸üªºÀÉ¦W
+            downloadLink.download = "downloaded_image.jpg"; 
             document.body.appendChild(downloadLink);
             downloadLink.click();
             document.body.removeChild(downloadLink);
 
-            // ¸õÂà¨ì«ü©wºô§}
+
             setTimeout(() => {
-                window.location.href = "index.html"; // ¦^¹CÀ¸µe­±
-            }, 500); // µ¥«İ 0.5 ¬í¡A½T«O¤U¸ü°Ê§@§¹¦¨
+                window.location.href = "index.html"; 
+            }, 500); 
         });
     </script>
 
