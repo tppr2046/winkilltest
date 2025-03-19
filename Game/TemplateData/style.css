@@ -5,5 +5,4 @@ body { padding: 0; margin: 0 }
 #unity-logo { width: 160px; height: 81px; background: url('loading-logo.gif') no-repeat center }
 #unity-progress-bar-empty { margin-left: auto; margin-right: auto; width: 141px; height: 20px; margin-top: 10px; background: url('progress-bar-bg.png') no-repeat center }
 #unity-progress-bar-full { width: 0%; height: 18px; margin-top: 10px; background: url('progress-bar.png') no-repeat center }
-#unity-trademark { width: 172px; height: 100px; background: url('loading-logo-small.png') no-repeat center }
 #unity-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
